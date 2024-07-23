@@ -70,6 +70,9 @@ header{
     box-shadow: 1px 1px 1px rgb(75,75,75)
     ;
 }
+.taskBox:hover{
+    background-color: #e8f0f0;
+}
 .taskText{
     margin-left: 12px;
 }
@@ -77,4 +80,44 @@ header{
     cursor: pointer;
     margin-right: 9px;
     border: none;
+}
+
+.taskCardsArea{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.addTaskCardButtonArea{
+    margin-left: 1%;
+    margin-top: 25px;
+}
+.addTaskCardButton{
+    padding: 10px 18px;
+    border-radius: 9999px ;
+    font-size: 30px;
+    color: #666;
+    background-color: #c6e5d9;
+    box-shadow: 3px 3px 8px 1px #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: #666;
+}
+.addTaskCardButton:hover{
+    box-shadow: none;
+    transform: translate(3px,3px);
+    background-color: #79a8a9;
+}
+.taskCardTitleAndTaskCardDeleteButtonArea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskCardDeleteButton{
+    border: none;
+    background-color: rgb(228,228,228);
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(158 48 48);
 }
